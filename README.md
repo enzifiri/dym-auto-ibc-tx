@@ -22,6 +22,7 @@ URL: chrome-extension://dmkamcknogkgcdfhhbddcghachkejeap/popup.html
 ![image](https://github.com/enzifiri/dym-auto-ibc-tx/assets/76253089/8393cb2e-829b-4dc6-9c46-c1cf3f11d8ed)
 
 Portal linki: https://portal.dymension.xyz/rollapp/rues_2215298-1
+Wallet ve Channel bilgisini bulma:
 ![image](https://github.com/enzifiri/dym-auto-ibc-tx/assets/76253089/fe5c7694-7eb7-4928-b5cf-6bfd0e2b0c2a)
 
 
