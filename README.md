@@ -1,13 +1,124 @@
 # dym-auto-ibc-tx
 Keplr > Metamask IBC TRANSFER for MONKEYS! (rollapes)
 
-## Keplrdan Geliştiric modunu açalım. Sırasıyla işaretlediğim yerlere basın.
+## 1-Keplrdan Geliştiric modunu açalım. Sırasıyla işaretlediğim yerlere basın.
 ![image](https://github.com/enzifiri/dym-auto-ibc-tx/assets/76253089/a0f3925b-25a1-4dca-84bb-2e6e2de7e6bc)
 
-## Şimdi diğer Roll Applerin ağlarını cüzdanımıza ekleyeceğiz, Alttaki Linke girin ve Deposit Funds butonuna basın, Keplrdan Keplra gönderimi seçin. Sırasıyla işaretledğim butonlara baısn
-
-https://portal.dymension.xyz/rollapp/asdas_1155050-1
+## 2-Şimdi Roll Applerin ağlarını cüzdanımıza ekleyeceğiz (IBC transfer kısmında lazım olacak), Alttaki Linke girin ve Deposit Funds butonuna basın, Keplrdan Keplra gönderimi seçin. Sırasıyla işaretledğim butonlara baısn
+https://portal.dymension.xyz/rollapp/rues_2215298-1
 ![image](https://github.com/enzifiri/dym-auto-ibc-tx/assets/76253089/655adfe1-4121-4a44-88f8-f3734daec09a)
+
+## 3-Altta verdiğim urlyi tarayıcınızda yeni sekme açıp aratın. Sonrasında en alttaki Advanced IBC ksımındaki Transfer butonuna basın.
+
+URL: chrome-extension://dmkamcknogkgcdfhhbddcghachkejeap/popup.html
+
+![image](https://github.com/enzifiri/dym-auto-ibc-tx/assets/76253089/60341dd3-8ad9-447a-aaea-c6a2d95f0bed)
+
+## 4-DYM tokeni seçin ve Desnation chain kısmına basın en altta New IBC Trasnfer channele basın. Alttaki gibi karşılıklı TX yapacağımız kişilerin ağını eklememiz gerekiyor. Destination chain: Rues_221.... Channel: 6195, Bilgileri girdikten sonra save diyip kaydedin.
+![image](https://github.com/enzifiri/dym-auto-ibc-tx/assets/76253089/d440f549-8425-49ec-8bd1-e74ffe5de8c3)
+
+## 5-Wallet addres kısmına hangi rollup olursa olsun aynı adresi gireceğiz, Çünkü IBC transferi yapmak için adres bu, channel ile de hangi rollupa işlem göndereceğimizi belirledik. Adresi girip Next butonuna basın.
+
+adress: ethm1hmssffakpll0d3hesk2j8s286zd9yfv0pzlcag
+
+![image](https://github.com/enzifiri/dym-auto-ibc-tx/assets/76253089/309a5686-009e-496a-94ac-ff885d3ed1b6)
+
+## 6-Sonrasına Amount kısmına istediğinizi yazın ben 0.01 transfer ederek tx kasıyorum. Next butonuna basmadan önce fotoğrafta belirttiğim gibi oluşan URLyi bi yere not edin, TX yapacağımız zaman bu urlyi aratıp hızlıca TX kasabileceğiz.
+
+![image](https://github.com/enzifiri/dym-auto-ibc-tx/assets/76253089/6fbb000b-9992-49fd-b7df-f52376b9b14e)
+
+## Keplr kullanarak IBC transfer yapmak bu kadar basit, Bu işlemlerden sonra Otomatik olarak IBC Transfer göndermek için script var, Kimin Rollupunda TX kasacaksanız 2. adımda anlattığım Rollup Ağını ekleyip bunu Keplra tanıtmanız gerekiyor. Scrpitin anlatımına geçeyim.
+
+### window.location.href kısmında kimle tx kasacaksanız onun urlsini değiştirin. Değiştirmeden kullanırsanız Rues_221... kanalında IBC transfer yapacaksınız.
+### Kodu kullanmadan alttaki urlye tekrar gidelim sağ tıklayıp incele diyelim, ardından sol üstteki Console butonuna basıp alttaki kodu direk yapıştırıp çalıştırın.
+![image](https://github.com/enzifiri/dym-auto-ibc-tx/assets/76253089/caa32879-73ff-4598-9dc3-244f19c468a1)
+
+```
+async function anaIslem() {
+    const bekle = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+    while (true) {
+        // BASKASINA TRANSFER YAPACAKSANIZ BURDAKİ URLYİ DEĞİŞTİRİN. (default rues_221....)
+        window.location.href = 'chrome-extension://dmkamcknogkgcdfhhbddcghachkejeap/popup.html#/ibc-transfer?chainId=froopyland_100-1&coinMinimalDenom=udym&initialGasAdjustment=1.3&initialIBCChannels=%5B%7B%22channelId%22%3A%22channel-6195%22%2C%22counterpartyChainId%22%3A%22rues_2215298-1%22%2C%22portId%22%3A%22transfer%22%7D%5D&initialRecipient=ethm1hmssffakpll0d3hesk2j8s286zd9yfv0pzlcag&initialFeeCurrency=udym&initialFeeType=average&initialAmount=0.01';
+
+        await bekle(1000); // Sayfanın yüklenmesini bekleyin (gerektiğinde süreyi ayarlayın)
+
+        let nextBulundu = false;
+        let approveBulundu = false;
+
+        try {
+            // İlk Next düğmesine tıkla
+            document.querySelector('#app > div > div > div > div.simplebar-wrapper > div.simplebar-mask > div > div > div > div > div.sc-bczRLJ.DypIt > div > div > button').click();
+            nextBulundu = true;
+        } catch (error) {
+            nextBulundu = false;
+            console.error('İlk Next düğmesi bulunamadı. Tekrar deneyin.');
+        }
+
+        await bekle(1000); // Sayfanın yüklenmesini bekleyin (gerektiğinde süreyi ayarlayın)
+
+        try {
+            // İkinci Next düğmesine tıkla
+            document.querySelector('#app > div > div > div > div.simplebar-wrapper > div.simplebar-mask > div > div > div > div > div.sc-bczRLJ.DypIt > div > div > button').click();
+            nextBulundu = true;
+        } catch (error) {
+            nextBulundu = false;
+            console.error('İkinci Next düğmesi bulunamadı. Tekrar deneyin.');
+        }
+
+        await bekle(1000); // Sayfanın yüklenmesini bekleyin (gerektiğinde süreyi ayarlayın)
+
+        try {
+            // Approve düğmesine tıkla
+            document.querySelector('#app > div > div > div > div.simplebar-wrapper > div.simplebar-mask > div > div > div > div > div.sc-bczRLJ.DypIt > div > button').click();
+            approveBulundu = true;
+        } catch (error) {
+            approveBulundu = false;
+        }
+
+        // Eğer "Approve" düğmesi bulunamazsa ve en az bir "Next" düğmesi bulunmuşsa
+        if (!approveBulundu && nextBulundu) {
+            // Önceki "Next" düğmelerini bulup tıkla
+            try {
+                document.querySelector('#app > div > div > div > div.simplebar-wrapper > div.simplebar-mask > div > div > div > div > div.sc-bczRLJ.DypIt > div > div > button').click();
+            } catch (error) {
+                console.error('Önceki "Next" düğmeleri bulunamadı. Tekrar deneyin.');
+            }
+        }
+
+        // Transaction Success elementini bulana kadar bekleyin
+        const transactionSuccess = document.querySelector('div.sc-bczRLJ.gHGHPk > div > div.sc-hKMtZM.sc-iqcoie.vhlUB.ehOBsB');
+        if (transactionSuccess) {
+            // İşlem başarıyla tamamlandığında döngüyü baştan başlatın
+            continue;
+        }
+
+        // İşlemi başarıyla tamamlandığında döngüyü baştan başlatın
+        await bekle(3000); // Sayfanın yüklenmesini bekleyin (gerektiğinde süreyi ayarlayın)
+    }
+}
+
+// Ana işlemi başlat
+anaIslem();
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Şimdi diğer arkadaşlarımızın Rollapp Ağlarını da cüzdanlarımıza eklememiz gerekiyor, Onlarda da üstteki işlemi yapacağız, Ne kadar çok rollappta işlem yaparsak hepimiz için iyi olacaktır, (100 Adet Rollapp ağını ekleyelim)
 
