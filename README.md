@@ -2,30 +2,36 @@
 Keplr > Metamask IBC TRANSFER for MONKEYS! (rollapes)
 
 ## 1-Keplrdan Geliştiric modunu açalım. Sırasıyla işaretlediğim yerlere basın.
-![image](https://github.com/enzifiri/dym-auto-ibc-tx/assets/76253089/a0f3925b-25a1-4dca-84bb-2e6e2de7e6bc)
+![image](https://github.com/enzifiri/dym-auto-ibc-tx/assets/76253089/72327bc4-4078-4a6a-9945-c6892f931ecd)
+
 
 ## 2-Şimdi Roll Applerin ağlarını cüzdanımıza ekleyeceğiz (IBC transfer kısmında lazım olacak), Alttaki Linke girin ve Deposit Funds butonuna basın, Keplrdan Keplra gönderimi seçin. Sırasıyla işaretledğim butonlara baısn
 https://portal.dymension.xyz/rollapp/rues_2215298-1
-![image](https://github.com/enzifiri/dym-auto-ibc-tx/assets/76253089/655adfe1-4121-4a44-88f8-f3734daec09a)
+![image](https://github.com/enzifiri/dym-auto-ibc-tx/assets/76253089/354b75c4-8322-4e2b-ae1b-5ad57114578f)
+
 
 ## 3-Altta verdiğim urlyi tarayıcınızda yeni sekme açıp aratın. Sonrasında en alttaki Advanced IBC ksımındaki Transfer butonuna basın.
 
 URL: chrome-extension://dmkamcknogkgcdfhhbddcghachkejeap/popup.html
 
-![image](https://github.com/enzifiri/dym-auto-ibc-tx/assets/76253089/60341dd3-8ad9-447a-aaea-c6a2d95f0bed)
+![image](https://github.com/enzifiri/dym-auto-ibc-tx/assets/76253089/51b8a444-620e-49b8-a21d-77f0378ae5f3)
+
 
 ## 4-DYM tokeni seçin ve Desnation chain kısmına basın en altta New IBC Trasnfer channele basın. Alttaki gibi karşılıklı TX yapacağımız kişilerin ağını eklememiz gerekiyor. Destination chain: Rues_221.... Channel: 6195, Bilgileri girdikten sonra save diyip kaydedin.
-![image](https://github.com/enzifiri/dym-auto-ibc-tx/assets/76253089/d440f549-8425-49ec-8bd1-e74ffe5de8c3)
+![image](https://github.com/enzifiri/dym-auto-ibc-tx/assets/76253089/8393cb2e-829b-4dc6-9c46-c1cf3f11d8ed)
+
 
 ## 5-Wallet addres kısmına hangi rollup olursa olsun aynı adresi gireceğiz, Çünkü IBC transferi yapmak için adres bu, channel ile de hangi rollupa işlem göndereceğimizi belirledik. Adresi girip Next butonuna basın.
 
 adress: ethm1hmssffakpll0d3hesk2j8s286zd9yfv0pzlcag
 
-![image](https://github.com/enzifiri/dym-auto-ibc-tx/assets/76253089/309a5686-009e-496a-94ac-ff885d3ed1b6)
+![image](https://github.com/enzifiri/dym-auto-ibc-tx/assets/76253089/7eb183c1-4c93-48af-8de2-3235a861ffb4)
+
 
 ## 6-Sonrasına Amount kısmına istediğinizi yazın ben 0.01 transfer ederek tx kasıyorum. Next butonuna basmadan önce fotoğrafta belirttiğim gibi oluşan URLyi bi yere not edin, TX yapacağımız zaman bu urlyi aratıp hızlıca TX kasabileceğiz.
 
-![image](https://github.com/enzifiri/dym-auto-ibc-tx/assets/76253089/6fbb000b-9992-49fd-b7df-f52376b9b14e)
+![image](https://github.com/enzifiri/dym-auto-ibc-tx/assets/76253089/0e7444f8-0640-4a41-b2bf-34e5264e27b1)
+
 
 ## Keplr kullanarak IBC transfer yapmak bu kadar basit, Bu işlemlerden sonra Otomatik olarak IBC Transfer göndermek için script var, Kimin Rollupunda TX kasacaksanız 2. adımda anlattığım Rollup Ağını ekleyip bunu Keplra tanıtmanız gerekiyor. Scrpitin anlatımına geçeyim.
 
@@ -105,26 +111,10 @@ anaIslem();
 ```
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Şimdi diğer arkadaşlarımızın Rollapp Ağlarını da cüzdanlarımıza eklememiz gerekiyor, Onlarda da üstteki işlemi yapacağız, Ne kadar çok rollappta işlem yaparsak hepimiz için iyi olacaktır, (100 Adet Rollapp ağını ekleyelim)
+### Şimdi diğer arkadaşlarımızın Rollapp Ağlarını da cüzdanlarımıza ekleyelim, Ne kadar çok rollappta işlem yaparsak hepimiz için iyi olacaktır, (100 Adet Rollapp ağını ekleyelim)
 
 <a href="https://portal.dymension.xyz/rollapp/rues_2215298-1" target="_blank">.1 Rollup</a>  <br>
+<a href="https://portal.dymension.xyz/rollapp/aazifiri_7919697-1" target="_blank">.1 Enzifiri</a>  <br>
 <a href="https://portal.dymension.xyz/rollapp/wwanyone_7167961-1" target="_blank">.2 WWAnyone</a>  <br>
 <a href="https://portal.dymension.xyz/rollapp/vevivo_7131032-1" target="_blank">.3 Vevivo</a>  <br>
 <a href="https://portal.dymension.xyz/rollapp/mutu_2624378-1" target="_blank">.4 Mutu</a>  <br>
@@ -145,7 +135,6 @@ anaIslem();
 <a href="https://portal.dymension.xyz/rollapp/myrollerapp_4555277-1" target="_blank">.19 My Rollerapp</a>  <br>
 <a href="https://portal.dymension.xyz/rollapp/testnetnodes_6811501-1" target="_blank">.20 Testnet Nodes</a>  <br>
 <a href="https://portal.dymension.xyz/rollapp/cmdexe_7182178-1" target="_blank">.21 Cmdexe</a>  <br>
-<a href="https://portal.dymension.xyz/rollapp/cmdexe_7182178-1" target="_blank">.22 Cmdexe</a>  <br>
 <a href="https://portal.dymension.xyz/rollapp/devil_9934124-1" target="_blank">.23 Devil</a>  <br>
 <a href="https://portal.dymension.xyz/rollapp/zeycan_3437501-1" target="_blank">.24 Zeycan</a>  <br>
 <a href="https://portal.dymension.xyz/rollapp/machvi_3010884-1" target="_blank">.25 Machvi</a>  <br>
@@ -158,12 +147,10 @@ anaIslem();
 <a href="https://portal.dymension.xyz/rollapp/kingsharald_6676734-1" target="_blank">.32 King Sharald</a>  <br>
 <a href="https://portal.dymension.xyz/rollapp/wasowskyrollapp_5241-1" target="_blank">.33 Wasowsky Rollup</a>  <br>
 <a href="https://portal.dymension.xyz/rollapp/knowledge_5654358-1" target="_blank">.34 Knowledge</a>  <br>
-<a href="https://portal.dymension.xyz/rollapp/froopyland_100-1" target="_blank">.35 Froopyland</a>  <br>
 <a href="https://portal.dymension.xyz/rollapp/svserden_6184578-1" target="_blank">.36 Svserden</a>  <br>
 <a href="https://portal.dymension.xyz/rollapp/karahan_5225752-1" target="_blank">.37 Karahan</a>  <br>
 <a href="https://portal.dymension.xyz/rollapp/canduesed_7042481-1" target="_blank">.38 Canduesed</a>  <br>
 <a href="https://portal.dymension.xyz/rollapp/ckaarraapp_5833550-1" target="_blank">.39 Ckaarraapp</a>  <br>
-<a href="https://github.com/dymensionxyz/rollapp-registry" target="_blank">.40 Rollapp Registry</a>  <br>
 <a href="https://portal.dymension.xyz/rollapp/glmsr_2383808-1" target="_blank">.41 Glmsr</a>  <br>
 <a href="https://portal.dymension.xyz/rollapp/marilyn_5525101-1" target="_blank">.42 Marilyn</a>  <br>
 <a href="https://portal.dymension.xyz/rollapp/bootstraprollapp_9294242-1" target="_blank">.43 Bootstrap Rollapp</a>  <br>
@@ -212,8 +199,6 @@ anaIslem();
 <a href="https://portal.dymension.xyz/rollapp/eftay_9825216-1" target="_blank">.87 Eftay</a>  <br>
 <a href="https://portal.dymension.xyz/rollapp/utkububa_6461015-1" target="_blank">.88 Utkububa</a>  <br>
 <a href="https://portal.dymension.xyz/rollapp/zozak_8767363-1" target="_blank">.89 Zozak</a>  <br>
-<a href="https://portal.dymension.xyz/hub/froopyland_100-1" target="_blank">.90 Froopyland</a>  <br>
-<a href="https://portal.dymension.xyz/rollapp/froopyland_100-1" target="_blank">.91 Froopyland</a>  <br>
 <a href="https://portal.dymension.xyz/rollapp/taurusrollapp_2484522-1" target="_blank">.92 Taurus Rollapp</a>  <br>
 <a href="https://portal.dymension.xyz/rollapp/burcukale_4112966-1" target="_blank">.93 Burcukale</a>  <br>
 <a href="https://portal.dymension.xyz/rollapp/sacitt_3701850-1" target="_blank">.94 Sacitt</a>  <br>
