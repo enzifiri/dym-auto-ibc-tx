@@ -17,13 +17,17 @@ URL: chrome-extension://dmkamcknogkgcdfhhbddcghachkejeap/popup.html
 ![image](https://github.com/enzifiri/dym-auto-ibc-tx/assets/76253089/51b8a444-620e-49b8-a21d-77f0378ae5f3)
 
 
-## 4-DYM tokeni seçin ve Desnation chain kısmına basın en altta New IBC Trasnfer channele basın. Alttaki gibi karşılıklı TX yapacağımız kişilerin ağını eklememiz gerekiyor. Destination chain: Rues_221.... Channel: 6195, Bilgileri girdikten sonra save diyip kaydedin.
+## 4-DYM tokeni seçin ve Desnation chain kısmına basın en altta New IBC Trasnfer channele basın. Ağı eklemeden bu aşamaya geçerseniz Chain kısmına göremeyeceksiniz Önce ağı ekleyin. Destination chain: Rues_221.... Channel: 6195, Bilgileri girdikten sonra save diyip kaydedin.
+## Başka rollup kullanacaksanız Channel ve Wallet adresini bulmanız gerekiyor. Dymension portala gidin, Tx kasacağınız rollupu aratıp deposit kısmında 1 tane işlem yapın. Açılan Keplr ekranında cüzdan adresi ve Chanel bulunuyor, bunları sonraki aşamada kullanacağız.
 ![image](https://github.com/enzifiri/dym-auto-ibc-tx/assets/76253089/8393cb2e-829b-4dc6-9c46-c1cf3f11d8ed)
 
+Portal linki: https://portal.dymension.xyz/rollapp/rues_2215298-1
+![image](https://github.com/enzifiri/dym-auto-ibc-tx/assets/76253089/fe5c7694-7eb7-4928-b5cf-6bfd0e2b0c2a)
 
-## 5-Wallet addres kısmına hangi rollup olursa olsun aynı adresi gireceğiz, Çünkü IBC transferi yapmak için adres bu, channel ile de hangi rollupa işlem göndereceğimizi belirledik. Adresi girip Next butonuna basın.
 
-adress: ethm1hmssffakpll0d3hesk2j8s286zd9yfv0pzlcag
+## 5-Wallet addres kısmına hangi rollupı kullanacaksak onun adresini girmemiz gerekiyor,4. aşamada anlattım. Adress ETHM ile başlıyor, Adresi girip Next butonuna basın.
+
+adress: ethm1hmssffakpll0d3hesk2j8s286zd9yfv0pzlcag 
 
 ![image](https://github.com/enzifiri/dym-auto-ibc-tx/assets/76253089/7eb183c1-4c93-48af-8de2-3235a861ffb4)
 
@@ -112,7 +116,7 @@ anaIslem();
 ```
 
 
-### Şimdi diğer arkadaşlarımızın Rollapp Ağlarını da cüzdanlarımıza ekleyelim, Ne kadar çok rollappta işlem yaparsak hepimiz için iyi olacaktır, (100 Adet Rollapp ağını ekleyelim)
+### Şimdi diğer arkadaşlarımızın Rollapp Ağlarını da cüzdanlarımıza ekleyelim, Ne kadar çok rollappta işlem yaparsak hepimiz için iyi olacaktır, (100 Adet Rollapp ağını ekleyelim, Otomatik tx işlemi yapacaksanız ağı ekledikten sonra 4. aşamayı yapmanız gerekiyor.)
 
 <a href="https://portal.dymension.xyz/rollapp/rues_2215298-1" target="_blank">.1 Ruesandora</a>  <br>
 <a href="https://portal.dymension.xyz/rollapp/aazifiri_7919697-1" target="_blank">.2 Enzifiri</a>  <br>
