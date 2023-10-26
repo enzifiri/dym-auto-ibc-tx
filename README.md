@@ -38,7 +38,8 @@ adress: ethm1hmssffakpll0d3hesk2j8s286zd9yfv0pzlcag
 ### window.location.href kısmında kimle tx kasacaksanız onun urlsini değiştirin. Değiştirmeden kullanırsanız Rues_221... kanalında IBC transfer yapacaksınız.
 ### Kodu kullanmadan alttaki urlye tekrar gidelim sağ tıklayıp incele diyelim, ardından sol üstteki Console butonuna basıp alttaki kodu direk yapıştırıp çalıştırın.
 ### Not: Sekmeyi arkaplana atarsanız IBC transfer gönderilmiyor, bilgisayarı kullanmadığınız anda açıp Tarayıcınızı arkaplana atmayın.
-![image](https://github.com/enzifiri/dym-auto-ibc-tx/assets/76253089/caa32879-73ff-4598-9dc3-244f19c468a1)
+![image](https://github.com/enzifiri/dym-auto-ibc-tx/assets/76253089/4e50dd07-aea9-4d9f-bd4f-f9f363d5b15a)
+
 ### Url: chrome-extension://dmkamcknogkgcdfhhbddcghachkejeap/popup.html
 
 ```
@@ -113,8 +114,8 @@ anaIslem();
 
 ### Şimdi diğer arkadaşlarımızın Rollapp Ağlarını da cüzdanlarımıza ekleyelim, Ne kadar çok rollappta işlem yaparsak hepimiz için iyi olacaktır, (100 Adet Rollapp ağını ekleyelim)
 
-<a href="https://portal.dymension.xyz/rollapp/rues_2215298-1" target="_blank">.1 Rollup</a>  <br>
-<a href="https://portal.dymension.xyz/rollapp/aazifiri_7919697-1" target="_blank">.1 Enzifiri</a>  <br>
+<a href="https://portal.dymension.xyz/rollapp/rues_2215298-1" target="_blank">.1 Ruesandora</a>  <br>
+<a href="https://portal.dymension.xyz/rollapp/aazifiri_7919697-1" target="_blank">.2 Enzifiri</a>  <br>
 <a href="https://portal.dymension.xyz/rollapp/wwanyone_7167961-1" target="_blank">.2 WWAnyone</a>  <br>
 <a href="https://portal.dymension.xyz/rollapp/vevivo_7131032-1" target="_blank">.3 Vevivo</a>  <br>
 <a href="https://portal.dymension.xyz/rollapp/mutu_2624378-1" target="_blank">.4 Mutu</a>  <br>
