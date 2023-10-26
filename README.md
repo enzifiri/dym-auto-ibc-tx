@@ -31,7 +31,9 @@ adress: ethm1hmssffakpll0d3hesk2j8s286zd9yfv0pzlcag
 
 ### window.location.href kısmında kimle tx kasacaksanız onun urlsini değiştirin. Değiştirmeden kullanırsanız Rues_221... kanalında IBC transfer yapacaksınız.
 ### Kodu kullanmadan alttaki urlye tekrar gidelim sağ tıklayıp incele diyelim, ardından sol üstteki Console butonuna basıp alttaki kodu direk yapıştırıp çalıştırın.
+### Not: Sekmeyi arkaplana atarsanız IBC transfer gönderilmiyor, bilgisayarı kullanmadığınız anda açıp Tarayıcınızı arkaplana atmayın.
 ![image](https://github.com/enzifiri/dym-auto-ibc-tx/assets/76253089/caa32879-73ff-4598-9dc3-244f19c468a1)
+### Url: chrome-extension://dmkamcknogkgcdfhhbddcghachkejeap/popup.html
 
 ```
 async function anaIslem() {
