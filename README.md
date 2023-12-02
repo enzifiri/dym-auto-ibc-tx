@@ -52,8 +52,8 @@ async function anaIslem() {
     const bekle = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
     while (true) {
-        // BASKASINA TRANSFER YAPACAKSANIZ BURDAKİ URLYİ DEĞİŞTİRİN. (default rues_221....)
-        window.location.href = 'chrome-extension://dmkamcknogkgcdfhhbddcghachkejeap/popup.html#/ibc-transfer?chainId=froopyland_100-1&coinMinimalDenom=udym&initialGasAdjustment=1.3&initialIBCChannels=%5B%7B%22channelId%22%3A%22channel-6195%22%2C%22counterpartyChainId%22%3A%22rues_2215298-1%22%2C%22portId%22%3A%22transfer%22%7D%5D&initialRecipient=ethm1hmssffakpll0d3hesk2j8s286zd9yfv0pzlcag&initialFeeCurrency=udym&initialFeeType=average&initialAmount=0.01';
+        // İlk sayfaya gidin
+        window.location.href = 'chrome-extension://dmkamcknogkgcdfhhbddcghachkejeap/popup.html#/ibc-transfer?chainId=froopyland_100-1&coinMinimalDenom=udym&initialGasAdjustment=1.3&initialIBCChannels=%5B%7B"channelId"%3A"channel-6764"%2C"counterpartyChainId"%3A"aazifiri_7919697-1"%2C"portId"%3A"transfer"%7D%5D&initialRecipient=ethm1ca225uvmqzjmkk27dxrl7qn5dt4llu6rd4qw93&initialFeeCurrency=udym&initialFeeType=average&initialAmount=0.01';
 
         await bekle(1000); // Sayfanın yüklenmesini bekleyin (gerektiğinde süreyi ayarlayın)
 
